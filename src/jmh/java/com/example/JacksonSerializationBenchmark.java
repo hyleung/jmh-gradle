@@ -18,7 +18,7 @@ import java.util.Map;
 @BenchmarkMode(Mode.AverageTime)
 @State(Scope.Benchmark)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
-public class MyBenchmark {
+public class JacksonSerializationBenchmark {
     private ObjectMapper mapper = new ObjectMapper();
     @Benchmark
     public void serializeMapToJson(Blackhole blackhole) throws Exception {
